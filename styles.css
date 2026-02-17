@@ -73,12 +73,13 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* end of css reset */
+/* Base styles */
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.5;
+  background: #ffffff;
 }
 
 .container {
@@ -88,15 +89,16 @@ body {
 }
 
 section {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  margin-top: 0;
+  font-weight: 600;
   margin-top: 0;
 }
+
+/* SUMMARY */
 
 .summary {
     display: flex;
@@ -116,3 +118,23 @@ h1, h2, h3 {
   margin: 0;
 }
 
+/* STASH  */
+
+.stash {
+  display: grid;
+  gap: 16px;
+}
+
+.yarn-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 800px) {
+  .stash {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
