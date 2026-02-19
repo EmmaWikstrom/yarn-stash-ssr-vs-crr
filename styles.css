@@ -1,3 +1,4 @@
+/* RESET */
 
 /* Box sizing rules */
 *,
@@ -73,7 +74,12 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* Base styles */
+/* DESIGN TOKENS */
+
+
+
+
+/* BASE STYLES */
 
 body {
   margin: 0;
@@ -102,39 +108,54 @@ h1, h2, h3 {
 
 .site-header {
   padding: 64px 16px 48px;
-  background: #708267;
-  color: #ffffff;  
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .site-header h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   letter-spacing: -0.02em;
+  margin-bottom: 12px;
 }
 
 .site-header p {
-  margin-top: 12px;
-  max-width: 600px;
-  opacity: 0.85;
+  max-width: 560px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /* SUMMARY */
 
 .summary {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    margin: 0;  
-    padding: 0;
+  display: flex;
+  gap: 56px;
+  margin: 0;
+  padding: 0;
 }
 
+.summary-title {
+ font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+}
 .summary-item {
-    display: flex;
-    gap: 8px;
-    align-items: baseline;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-item dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .summary-item dd {
-  margin: 0;
+  margin: 6px 0 0;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 /* STASH  */
