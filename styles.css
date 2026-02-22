@@ -80,7 +80,13 @@ textarea:not([rows]) {
   --color-text-primary: #3A3631;
   --color-text-secondary: #6B6660;
   --color-text-muted: rgba(0, 0, 0, 0.65);
+
+  --color-brand: #2F3E38;
+  --color-accent: #5E756C;
+  --color-warm-accent: #5A4638;
+
   --color-border-soft: rgba(0, 0, 0, 0.06);
+
   --color-background-page: #F8F7F5;
   --color-background-card: #FFFFFF;
 }
@@ -123,7 +129,8 @@ h1, h2, h3 {
   font-size: 2.6rem;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
-  color: var(--color-text-primary)
+  color: var(--color-brand);
+
 }
 
 .site-header p {
@@ -180,7 +187,7 @@ h1, h2, h3 {
   border: 1px solid var(--color-border-soft);
   border-radius: 18px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-  overflow: hidden; /* viktigt */
+  overflow: hidden; /* Ensure content doesn't overflow the card */
   padding-bottom: 20px;
 }
 
@@ -226,4 +233,20 @@ h1, h2, h3 {
 
 .yarn-card h3 {
   margin: 20px 0 12px;
+}
+
+/* FOOTER */
+
+.site-footer {
+  margin-top: 64px;
+  padding: 32px 0;
+  border-top: 1px solid var(--color-border-soft);
+  background: var(--color-background-card)
+}
+
+.footer-text {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  text-align: center;
 }
