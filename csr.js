@@ -1,5 +1,3 @@
-console.log('CSR JS loaded');
-
 const yarns = [
   {
     name: "Sunday",
@@ -72,11 +70,14 @@ app.innerHTML =
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-text">Yarn Stash</p>
-    </div>
-  </footer>`;
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-text">
+      Yarn Stash ·
+      <a href="ssr.html">View SSR version</a>
+    </p>
+  </div>
+</footer>`;
 
   const stash = document.getElementById("stash");
 
@@ -121,11 +122,7 @@ app.innerHTML =
   `;
   }
 
-//   stash.innerHTML = yarns.map(yarnCardTemplate).join("");
-
-stash.innerHTML = yarns.map(yarn => {
-  return yarnCardTemplate(yarn);
-}).join("");
+stash.innerHTML = yarns.map(yarn => yarnCardTemplate(yarn)).join("");
 
 const totalYarns = yarns.length; 
 
